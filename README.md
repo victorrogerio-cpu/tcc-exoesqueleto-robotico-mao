@@ -1,17 +1,26 @@
-# Desenvolvimento de um exoesqueleto robótico de mão
+# Luva robótica para fisioterapia
 
-Este repositório foi criado para organizar os arquivos do meu Trabalho de Conclusão de Curso em Engenharia de Controle e Automação.
+Repositório do Trabalho de Conclusão de Curso em Engenharia de Controle e Automação da UFRPE.
 
-O trabalho tem como proposta desenvolver uma luva robótica de baixo custo, controlada por um microcontrolador, para auxiliar os movimentos de flexão e extensão dos dedos durante exercícios de fisioterapia.
+O projeto desenvolve um exoesqueleto de mão de baixo custo para apoio a exercícios de fisioterapia. A revisão mecânica atual é a **R6B**, destinada à mão direita adulta tamanho L e organizada para fabricação por impressão 3D.
 
-## Organização do repositório
+## Estado atual
 
-- `firmware/`: códigos desenvolvidos durante o projeto;
-- `hardware/`: arquivos relacionados à parte eletrônica;
-- `mechanical/`: modelagem e arquivos da estrutura mecânica;
-- `docs/`: documentação técnica do projeto.
+- arquitetura mecânica definida para flexão ativa e abertura passiva;
+- servo principal DS3225-270, de 25 kgf·cm, posicionado na região volar do antebraço;
+- quatro tendões independentes para indicador, médio, anelar e mínimo;
+- polegar previsto com servo auxiliar para oposição e movimento de pinça;
+- retorno dos dedos por molas de extensão;
+- cinco sensores FSR402 previstos para leitura de contato/força;
+- modelos de fabricação disponíveis em STL, STEP e 3MF na entrega técnica R6B;
+- ensaio físico, calibração dos sensores e desenvolvimento do firmware ainda pendentes.
 
-Neste momento, o repositório contém apenas a estrutura inicial. Os arquivos serão adicionados conforme o andamento das atividades do TCC.
+## Estrutura
+
+- `mechanical/`: decisões mecânicas, conjuntos CAD e fabricação;
+- `hardware/`: arquitetura eletrônica, alimentação e sensoriamento;
+- `firmware/`: código de controle a ser desenvolvido após a montagem de bancada;
+- `docs/`: documentação técnica e registros das revisões.
 
 ## Autor
 

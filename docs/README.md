@@ -1,5 +1,5 @@
 # Documentação técnica
 
-Esta pasta será utilizada para reunir a documentação técnica produzida durante o desenvolvimento do projeto.
+A documentação da revisão mecânica R6B está em `docs/r6b/`.
 
-Os registros serão adicionados conforme cada etapa for realizada.
+Ela descreve a arquitetura mecânica, o estado atual do protótipo e os critérios que precisam ser verificados antes da montagem e dos ensaios.

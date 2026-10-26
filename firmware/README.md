@@ -1,5 +1,5 @@
-# Códigos
+# Firmware
 
-Esta pasta será utilizada para organizar os códigos desenvolvidos durante o projeto.
+Esta pasta receberá o firmware após a integração física do protótipo.
 
-Os arquivos serão adicionados quando essa etapa for iniciada.
+A primeira versão deverá contemplar leitura dos sensores FSR402, acionamento PWM dos servos, calibração, limites de curso, parada de emergência e registro dos ensaios. Nenhum código de controle foi publicado antes da validação da montagem mecânica e elétrica.
