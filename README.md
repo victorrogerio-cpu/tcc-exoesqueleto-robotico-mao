@@ -1,26 +1,38 @@
-# Luva robótica para fisioterapia
+# Luva robótica para fisioterapia da mão
 
-Repositório do Trabalho de Conclusão de Curso em Engenharia de Controle e Automação da UFRPE.
+Repositório técnico do Trabalho de Conclusão de Curso em Engenharia de Controle e Automação da UFRPE.
 
-O projeto desenvolve um exoesqueleto de mão de baixo custo para apoio a exercícios de fisioterapia. A revisão mecânica atual é a **R6B**, destinada à mão direita adulta tamanho L e organizada para fabricação por impressão 3D.
+## Escopo
 
-## Estado atual
+O projeto desenvolve um protótipo mecatrônico para assistência controlada à flexão dos quatro dedos longos e ao movimento de pinça do polegar durante exercícios de fisioterapia. O trabalho compreende projeto, fabricação e verificação técnica em bancada. Não apresenta o protótipo como dispositivo médico validado nem como comprovação de eficácia clínica.
 
-- arquitetura mecânica definida para flexão ativa e abertura passiva;
-- servo principal DS3225-270, de 25 kgf·cm, posicionado na região volar do antebraço;
-- quatro tendões independentes para indicador, médio, anelar e mínimo;
-- polegar previsto com servo auxiliar para oposição e movimento de pinça;
-- retorno dos dedos por molas de extensão;
-- cinco sensores FSR402 previstos para leitura de contato/força;
-- modelos de fabricação disponíveis em STL, STEP e 3MF na entrega técnica R6B;
-- ensaio físico, calibração dos sensores e desenvolvimento do firmware ainda pendentes.
+## Arquitetura mecânica em revisão
 
-## Estrutura
+A revisão mecânica atual utiliza:
 
-- `mechanical/`: decisões mecânicas, conjuntos CAD e fabricação;
-- `hardware/`: arquitetura eletrônica, alimentação e sensoriamento;
-- `firmware/`: código de controle a ser desenvolvido após a montagem de bancada;
-- `docs/`: documentação técnica e registros das revisões.
+- chassi monobloco de antebraço, destinado à mão esquerda adulta de referência;
+- servomotor DS3225 para os quatro dedos longos e MG996R para o polegar, instalados em berços laterais com fixação pelas abas originais;
+- carretéis independentes acoplados por flange metálica 25T e polias-guia com rolamentos 608ZZ;
+- transmissão por linha multifilamento de 0,50 mm conduzida em tubo PU 4 × 0,75 mm;
+- retorno por molas de tração;
+- tampa removível de proteção;
+- baia eletrônica integrada ao chassi para ESP32-S3, com acesso de programação, retenção da placa e rotas separadas para potência e sinais.
+
+Os modelos CAD e os arquivos de impressão somente são liberados após verificação de interfaces, folgas, fixações e rotas dos tendões. A aprovação geométrica digital não substitui o ensaio de bancada.
+
+## Estado do desenvolvimento
+
+- revisão teórica, requisitos e metodologia: em consolidação;
+- arquitetura mecânica lateral e transmissão por cabos: em revisão R13;
+- integração da baia do ESP32, roteamento elétrico e tampa: pendente de liberação CAD;
+- ensaios físicos, calibração dos sensores e firmware: pendentes.
+
+## Estrutura do repositório
+
+- `mechanical/`: modelos CAD, listas de materiais e instruções de montagem;
+- `hardware/`: arquitetura eletrônica, alimentação, proteção e sensoriamento;
+- `firmware/`: código embarcado e procedimentos de calibração;
+- `docs/`: decisões de projeto, rastreabilidade e protocolos de ensaio.
 
 ## Autor
 
