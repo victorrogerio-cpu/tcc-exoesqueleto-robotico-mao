@@ -23,8 +23,8 @@ Os modelos CAD e os arquivos de impressão somente são liberados após verifica
 ## Estado do desenvolvimento
 
 - revisão teórica, requisitos e metodologia: em consolidação;
-- arquitetura mecânica lateral e transmissão por cabos: em revisão R13;
-- integração da baia do ESP32, roteamento elétrico e tampa: pendente de liberação CAD;
+- arquitetura mecânica lateral e transmissão por cabos: revisão R14;
+- baia do ESP32, retenção mecânica e rota de cabos: modeladas; aguardam ensaio físico de montagem;
 - ensaios físicos, calibração dos sensores e firmware: pendentes.
 
 ## Estrutura do repositório
